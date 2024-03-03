@@ -23,3 +23,6 @@ El conversor es una herramienta que permite transformar unidades de una magnitud
 ![Imagen del conversor](media/conversor.png)
 
 ![Imagen de las opciones del conversor](media/opciones.png)
+
+## Conclusión
+En resumen, este proyecto de Desarrollo de Interfaces ha dado lugar a una calculadora versátil y funcional, complementada con un conversor que amplía aún más su utilidad en situaciones cotidianas. Esta aplicación ofrece una amplia gama de funcionalidades, desde operaciones básicas hasta funciones científicas avanzadas. Además, la cuidadosa atención prestada al diseño de la interfaz y al funcionamiento del código garantiza una experiencia de usuario intuitiva. En conjunto, este proyecto demuestra la aplicación exitosa de los conceptos aprendidos en la asignatura y ofrece una solución práctica y eficiente para las necesidades de cálculo y conversión en la vida diaria.
