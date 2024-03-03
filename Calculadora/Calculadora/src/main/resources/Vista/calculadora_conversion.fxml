@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="vbox-root" fx:id="vbox_principal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressed" prefHeight="620.0" prefWidth="420.0" styleClass="vbox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ConversorControlador">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Modo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#cambiarABasica" text="Básica" />
+                  <MenuItem mnemonicParsing="false" onAction="#cambiarACientifica" text="Científica" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edición">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirValoresConversion" text="Valores de conversión" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirInfo" text="Información" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <HBox id="hb-display-2" alignment="BOTTOM_RIGHT" prefHeight="90.0" prefWidth="360.0" stylesheets="@style.css">
+         <children>
+            <Label id="lb-secundario" fx:id="lbDisplaySecundario" stylesheets="@style.css">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+      <HBox id="hb-display-1" alignment="CENTER_RIGHT" prefHeight="90.0" prefWidth="360.0" stylesheets="@style.css">
+         <children>
+            <Label id="lb-principal" fx:id="lbDisplayPrincipal" stylesheets="@style.css" text="0">
+               <font>
+                  <Font name="Dubai Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+         <padding>
+            <Insets right="20.0" />
+         </padding></HBox>
+      <HBox alignment="CENTER" prefHeight="76.0" prefWidth="420.0">
+         <children>
+            <ComboBox fx:id="cbConversion" prefHeight="44.0" prefWidth="240.0" styleClass="combobox-conv" stylesheets="@style.css" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="76.0" prefWidth="420.0">
+         <children>
+            <ComboBox fx:id="cbUnidad1" prefHeight="44.0" prefWidth="180.0" styleClass="combobox-conv" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="cbUnidad2" prefHeight="44.0" prefWidth="180.0" styleClass="combobox-conv" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="20.0" stylesheets="@style.css">
+         <children>
+            <Button fx:id="btnCE" mnemonicParsing="false" onAction="#borrarDisplayPrincipal" prefHeight="60.0" prefWidth="140.0" styleClass="btn-calc-2" stylesheets="@style.css" text="CE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btnAtras" mnemonicParsing="false" onAction="#atrasDisplayPrincipal" prefHeight="60.0" prefWidth="140.0" styleClass="btn-calc-2" stylesheets="@style.css" text="&lt;-">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btnDecimal" mnemonicParsing="false" onAction="#agregarDecimal" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text=".">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="20.0" stylesheets="@style.css">
+         <children>
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="5">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btn6" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="6">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btn7" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="7">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btn8" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="8">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btn9" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="9">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="20.0" stylesheets="@style.css">
+         <children>
+            <Button fx:id="btn0" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="0">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="1">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="2">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="3">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+            <Button fx:id="btn4" mnemonicParsing="false" onAction="#agregarNumero" prefHeight="60.0" prefWidth="60.0" styleClass="btn-calc" stylesheets="@style.css" text="4">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

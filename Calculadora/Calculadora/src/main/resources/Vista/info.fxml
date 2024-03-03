@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="420.0" styleClass="anchorPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.InfoControlador">
+   <children>
+      <Button layoutX="184.0" layoutY="298.0" mnemonicParsing="false" onAction="#volver" prefHeight="53.0" prefWidth="100.0" styleClass="btn-calc-2" text="Volver">
+         <font>
+            <Font name="Dubai Regular" size="16.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutY="54.0" prefHeight="205.0" prefWidth="467.0" styleClass="label-info" text="Esta calculadora fue creada a principios del año 2024 por&#10;Dragos Gabriel Grecu Nicula, con el objetivo principal de&#10;aprender a utilizar JavaFX y SceneBuilder para la asignatura&#10;de Desarrollo de Interfaces del segundo curso del&#10;ciclo superior de Desarrollo de Aplicaciones Multiplataforma.&#10;" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Regular" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
