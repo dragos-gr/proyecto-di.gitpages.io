@@ -1,4 +1,6 @@
 # Proyecto final D.I.: calculadora
+## [Enlace a Pages]([https://www.frankfurter.app/](https://dragos-gr.github.io/proyecto-di.gitpages.io/)
+
 ## Propósito inicial
 Este repositorio contiene el proyecto final de la asignatura Desarrollo de Interfaces del módulo Desarrollo de Aplicaciones Multiplataforma de la Comunidad de Madrid (IES María de Zayas y Sotomayor, 2023 - 2024). La idea era desarrollar una calculadora, siendo esto una excusa para aplicar y consolidar los conocimientos adquiridos en la asignatura, y aprender a usar JavaFX con **IntelliJ IDEA** y **SceneBuilder**.
 
